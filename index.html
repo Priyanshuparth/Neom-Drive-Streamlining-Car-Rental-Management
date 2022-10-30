@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neom Drive | Experience the future</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <!-- Bootstrap -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<!-- Header Navbar starts -->
+<header class="header">
+
+  <section class="flex">
+
+    <a href="home.html" class="logo">Neom Drive</a>
+
+    <nav class="nav-bar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="carlisting.html">Car Listing</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="icons">
+      <a href="search.html"><i class="fas fa-search"></i></a>
+      <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+      <div id="user-btn" class="fas fa-user"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+
+    <div class="profile">
+      <p class="name">Priyanshu Parth</p>
+      <div class="flex">
+        <a href="profile.html" class="btn">profile</a>
+        <a href="#" class="delete-btn">logout</a>
+      </div>
+      <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+
+
+    </div>
+  </section>
+
+</header>
+
+<!-- Header Navbar ends -->
+
+<!-- Home slider starts -->
+
+<section class="home">
+
+  <div class="swiper home-slider">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide slide">
+        <div class="content">
+          <span>Book Now</span>
+          <h3>Wide Range Of Cars</h3>
+          <a href="menu.html" class="btn">see menus</a>
+        </div>
+        <div class="image">
+          <img src="./image/home-img-1.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="swiper-slide slide">
+        <div class="content">
+          <span>Book Now</span>
+          <h3>SUV</h3>
+          <a href="menu.html" class="btn">see more</a>
+        </div>
+        <div class="image">
+          <img src="./image/home-img-1.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="swiper-slide slide">
+        <div class="content">
+          <span>Book Now</span>
+          <h3>Sedan</h3>
+          <a href="menu.html" class="btn">see menus</a>
+        </div>
+        <div class="image">
+          <img src="./image/home-img-1.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+  </div>
+
+</section>
+
+<!-- Home slider ends -->
+
+<!-- FEATURED CAR -->
+
+<section class="section featured-car" id="featured-car">
+  <div class="container">
+
+    <div class="title-wrapper">
+      <h2 class="h2 section-title">Featured cars</h2>
+
+      <a href="#" class="featured-car-link">
+        <span>View more</span>
+
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+    </div>
+
+    <ul class="featured-car-list">
+
+      <li>
+        <div class="featured-car-card">
+
+          <figure class="card-banner">
+            <img src="./assets/images/car-1.jpg" alt="Toyota RAV4 2021" loading="lazy" width="440" height="300"
+              class="w-100">
+          </figure>
+
+          <div class="card-content">
+
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title">
+                <a href="#">Toyota RAV4</a>
+              </h3>
+
+              <data class="year" value="2021">2021</data>
+            </div>
+
+            <ul class="card-list">
+
+              <li class="card-list-item">
+                <ion-icon name="people-outline"></ion-icon>
+
+                <span class="card-item-text">4 People</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="flash-outline"></ion-icon>
+
+                <span class="card-item-text">Hybrid</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="speedometer-outline"></ion-icon>
+
+                <span class="card-item-text">6.1km / 1-litre</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                <span class="card-item-text">Automatic</span>
+              </li>
+
+            </ul>
+
+            <div class="card-price-wrapper">
+
+              <p class="card-price">
+                <strong>Rs.1500</strong> / month
+              </p>
+
+              <button class="btn fav-btn" aria-label="Add to favourite list">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn">Rent now</button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="featured-car-card">
+
+          <figure class="card-banner">
+            <img src="./assets/images/car-2.jpg" alt="BMW 3 Series 2019" loading="lazy" width="440" height="300"
+              class="w-100">
+          </figure>
+
+          <div class="card-content">
+
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title">
+                <a href="#">BMW 3 Series</a>
+              </h3>
+
+              <data class="year" value="2019">2019</data>
+            </div>
+
+            <ul class="card-list">
+
+              <li class="card-list-item">
+                <ion-icon name="people-outline"></ion-icon>
+
+                <span class="card-item-text">4 People</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="flash-outline"></ion-icon>
+
+                <span class="card-item-text">Gasoline</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="speedometer-outline"></ion-icon>
+
+                <span class="card-item-text">8.2km / 1-litre</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                <span class="card-item-text">Automatic</span>
+              </li>
+
+            </ul>
+
+            <div class="card-price-wrapper">
+
+              <p class="card-price">
+                <strong>Rs.3000</strong> / month
+              </p>
+
+              <button class="btn fav-btn" aria-label="Add to favourite list">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn">Rent now</button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="featured-car-card">
+
+          <figure class="card-banner">
+            <img src="./assets/images/car-3.jpg" alt="Volkswagen T-Cross 2020" loading="lazy" width="440" height="300"
+              class="w-100">
+          </figure>
+
+          <div class="card-content">
+
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title">
+                <a href="#">Volkswagen T-Cross</a>
+              </h3>
+
+              <data class="year" value="2020">2020</data>
+            </div>
+
+            <ul class="card-list">
+
+              <li class="card-list-item">
+                <ion-icon name="people-outline"></ion-icon>
+
+                <span class="card-item-text">4 People</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="flash-outline"></ion-icon>
+
+                <span class="card-item-text">Gasoline</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="speedometer-outline"></ion-icon>
+
+                <span class="card-item-text">5.3km / 1-litre</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                <span class="card-item-text">Automatic</span>
+              </li>
+
+            </ul>
+
+            <div class="card-price-wrapper">
+
+              <p class="card-price">
+                <strong>Rs.2500</strong> / month
+              </p>
+
+              <button class="btn fav-btn" aria-label="Add to favourite list">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn">Rent now</button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="featured-car-card">
+
+          <figure class="card-banner">
+            <img src="./assets/images/car-4.jpg" alt="Cadillac Escalade 2020" loading="lazy" width="440" height="300"
+              class="w-100">
+          </figure>
+
+          <div class="card-content">
+
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title">
+                <a href="#">Cadillac Escalade</a>
+              </h3>
+
+              <data class="year" value="2020">2020</data>
+            </div>
+
+            <ul class="card-list">
+
+              <li class="card-list-item">
+                <ion-icon name="people-outline"></ion-icon>
+
+                <span class="card-item-text">4 People</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="flash-outline"></ion-icon>
+
+                <span class="card-item-text">Gasoline</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="speedometer-outline"></ion-icon>
+
+                <span class="card-item-text">7.7km / 1-litre</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                <span class="card-item-text">Automatic</span>
+              </li>
+
+            </ul>
+
+            <div class="card-price-wrapper">
+
+              <p class="card-price">
+                <strong>Rs.4200</strong> / month
+              </p>
+
+              <button class="btn fav-btn" aria-label="Add to favourite list">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn">Rent now</button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="featured-car-card">
+
+          <figure class="card-banner">
+            <img src="./assets/images/car-5.jpg" alt="BMW 4 Series GTI 2021" loading="lazy" width="440" height="300"
+              class="w-100">
+          </figure>
+
+          <div class="card-content">
+
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title">
+                <a href="#">BMW 4 Series GTI</a>
+              </h3>
+
+              <data class="year" value="2021">2021</data>
+            </div>
+
+            <ul class="card-list">
+
+              <li class="card-list-item">
+                <ion-icon name="people-outline"></ion-icon>
+
+                <span class="card-item-text">4 People</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="flash-outline"></ion-icon>
+
+                <span class="card-item-text">Gasoline</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="speedometer-outline"></ion-icon>
+
+                <span class="card-item-text">7.6km / 1-litre</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                <span class="card-item-text">Automatic</span>
+              </li>
+
+            </ul>
+
+            <div class="card-price-wrapper">
+
+              <p class="card-price">
+                <strong>Rs.4500</strong> / month
+              </p>
+
+              <button class="btn fav-btn" aria-label="Add to favourite list">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn">Rent now</button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="featured-car-card">
+
+          <figure class="card-banner">
+            <img src="./assets/images/car-6.jpg" alt="BMW 4 Series 2019" loading="lazy" width="440" height="300"
+              class="w-100">
+          </figure>
+
+          <div class="card-content">
+
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title">
+                <a href="#">BMW 4 Series</a>
+              </h3>
+
+              <data class="year" value="2019">2019</data>
+            </div>
+
+            <ul class="card-list">
+
+              <li class="card-list-item">
+                <ion-icon name="people-outline"></ion-icon>
+
+                <span class="card-item-text">4 People</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="flash-outline"></ion-icon>
+
+                <span class="card-item-text">Gasoline</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="speedometer-outline"></ion-icon>
+
+                <span class="card-item-text">7.2km / 1-litre</span>
+              </li>
+
+              <li class="card-list-item">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                <span class="card-item-text">Automatic</span>
+              </li>
+
+            </ul>
+
+            <div class="card-price-wrapper">
+
+              <p class="card-price">
+                <strong>Rs.3500</strong> / month
+              </p>
+
+              <button class="btn fav-btn" aria-label="Add to favourite list">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn">Rent now</button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer starts -->
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <h2>Neom Drive</h2>
+
+        <p class="footer-text">
+          Search for cheap rental cars in India. With a diverse fleet of 19,000 vehicles, Waydex offers its
+          consumers an
+          attractive and fun selection.
+        </p>
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Company</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">About us</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Pricing plans</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Our blog</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Contacts</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Support</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Help center</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Ask a question</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Privacy policy</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Terms & conditions</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Neighborhoods in India</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Delhi</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Mumbai</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Bangalore</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Hyderabad</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Ahmedabad</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Chennai</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Kolkata</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Pune</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+      <p class="copyright">
+        &copy; 2022 <a href="#">Neom Drive</a>. All Rights Reserved
+      </p>
+
+    </div>
+
+  </div>
+</footer>
+<!-- Footer ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="loader">
+  <img src="images/loader.gif" alt="">
+</div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="./js/script.js"></script>
+
+<script>
+
+  var swiper = new Swiper(".home-slider", {
+    loop: true,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+</script>
+
+<!-- 
+     - ionicon link
+   -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
