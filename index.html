@@ -8,6 +8,7 @@
   <title>Neom Drive | Experience the future</title>
 
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
 
   <!-- Bootstrap -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
@@ -18,13 +19,14 @@
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
-
+<body>
+  <div class="csss">
 <!-- Header Navbar starts -->
 <header class="header">
 
   <section class="flex">
 
-    <a href="home.html" class="logo">Neom Drive</a>
+    <a href="home.html" class="logo"><img src="./image/NeomDrive.png" alt="" height="100px" width="150px"></a>
 
     <nav class="nav-bar">
       <a href="index.html">Home</a>
@@ -33,9 +35,17 @@
       <a href="faqs.html">FAQs</a>
       <a href="contact.html">Contact</a>
     </nav>
-
+    <div class="input-group">
+      <div class="form-outline">
+        <input type="search" id="form1" class="form-control" />
+        <label class="form-label" for="form1">Search</label>
+      </div>
+      <button type="button" class="btn btn-primary">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
     <div class="icons">
-      <a href="search.html"><i class="fas fa-search"></i></a>
+      
       <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
       <div id="user-btn" class="fas fa-user"></div>
       <div id="menu-btn" class="fas fa-bars"></div>
@@ -83,7 +93,7 @@
           <a href="menu.html" class="btn">see more</a>
         </div>
         <div class="image">
-          <img src="./image/home-img-1.jpg" alt="">
+          <img src="./image/suv-img.jpg" alt="">
         </div>
       </div>
 
@@ -94,7 +104,18 @@
           <a href="menu.html" class="btn">see menus</a>
         </div>
         <div class="image">
-          <img src="./image/home-img-1.jpg" alt="">
+          <img src="./image/sedan-img.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="swiper-slide slide">
+        <div class="content">
+          <span>Book Now</span>
+          <h3>Sports</h3>
+          <a href="menu.html" class="btn">see menus</a>
+        </div>
+        <div class="image">
+          <img src="./image/sports-img.jpg" alt="">
         </div>
       </div>
 
@@ -114,10 +135,10 @@
   <div class="container">
 
     <div class="title-wrapper">
-      <h2 class="h2 section-title">Featured cars</h2>
+      <h2 style="color: white;" class="h2 section-title">Featured cars</h2>
 
       <a href="#" class="featured-car-link">
-        <span>View more</span>
+        <span style="color: white;">View more</span>
 
         <ion-icon name="arrow-forward-outline"></ion-icon>
       </a>
@@ -732,6 +753,7 @@
    -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</div>
 
 </body>
 

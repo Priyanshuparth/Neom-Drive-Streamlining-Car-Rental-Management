@@ -5,7 +5,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Faqs</title>
+    <style>
+      
+        .container{
+            margin: 0 40px;
+            margin-top: 100px;
+            /* max-width: 600px; */
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+           
+        }
+        .container h1{
+            color: #333;
+            font-size: 350%;
+        }
+        .container.tab{
+            position: relative;
+            background: #fff;
+            padding: 0 20px 20px;
+            box-shadow: 0  15px 25px rgba(0, 0, 0, 0.05);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .container .tab input
+        {
+            appearance: none;
+        }
+        .container .tab label{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .container .tab label::after{
+            content: '+';
+            position: absolute;
+            right: 20px;
+            font-size: 2em;
+            color: rgba(0, 0, 0, 0.1);
+            transition: transform 1s;
+        }
+        .container .tab:hover label::after{
+            color: #333;
+        }
+        .container .tab input:checked ~ label::after{
+            transform: rotate(135deg);
+            
+        }
+        .container .tab label h2{
+            width: 40px;
+            height: 20px;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.25em;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+       
+        .container .tab:nth-child(2) label h2{
+            background: linear-gradient(132deg,rgb(247, 113, 11),rgb(243, 138, 58));
+        }
+        .container .tab:nth-child(3) label h2{
+            background: linear-gradient(132deg,rgb(243, 247, 1),rgb(238, 240, 86));
+        }
+        .container .tab:nth-child(4) label h2{
+            background: linear-gradient(132deg,#70f570,#49c628);
+        }
+        .container .tab:nth-child(5) label h2{
+            background: linear-gradient(132deg,#3c8ce7,#00eaff);
+        }
+        .container .tab label  h3{
+            position: relative;
+            font-weight: 500;
+            color: #333;
+            z-index: 10;
+        }
+        .container .tab .content{
+            max-height: 0;
+            transition: 1s;
+            overflow: hidden;
+        }
+        .container .tab input:checked ~ .content{
+            max-height: 100vh;
+        }
+        .container .tab .content p{
+            position: relative;
+            padding: 10px 0;
+            color: #333;
+            z-index: 10;
+           
+        }
+        .tab h2{
+            font-size: 300%;
+            margin: 6px;
+            padding: 4px;
+        }
+      .tab h3{
+        font-size: 170%;
+        margin: 2px;
+      }
+      .content{
+        font-size: 150%;
+      }
+    </style>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
@@ -22,7 +129,7 @@
 
     <section class="flex">
 
-        <a href="home.html" class="logo">Neom Drive</a>
+        <a href="home.html" class="logo"><img src="./image/NeomDrive.png" alt="" height="70px"></a>
 
         <nav class="nav-bar">
             <a href="index.html">Home</a>
@@ -31,9 +138,17 @@
             <a href="faqs.html">FAQs</a>
             <a href="contact.html">Contact</a>
         </nav>
-
+        <div class="input-group">
+            <div class="form-outline">
+              <input type="search" id="form1" class="form-control" />
+              <label class="form-label" for="form1">Search</label>
+            </div>
+            <button type="button" class="btn btn-primary">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
         <div class="icons">
-            <a href="search.html"><i class="fas fa-search"></i></a>
+           
             <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
             <div id="user-btn" class="fas fa-user"></div>
             <div id="menu-btn" class="fas fa-bars"></div>
@@ -60,14 +175,56 @@
 <!-- About section starts -->
 
 
-<div class="heading">
-    <h3>FAQs</h3>
+<div class="container">
+
+    <h1>Frequently Asked Questions?</h1>
+    <div class="tab">
+        <input type="radio"  name="acc" id="acc1" >
+        <label for="acc1">
+        <h2>01</h2>
+        <h3>What is your refund policy??</h3>
+    </label>
+    <div class="content">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum ex ducimus libero quia sunt impedit, sed vitae. Odio totam saepe eum laboriosam magnam consectetur minima dolorum accusamus. Excepturi, nam at.</p>
+    </div>
+        
+    </div>
+    <div class="tab">
+        <input type="radio"  name="acc" id="acc2" >
+        <label for="acc2">
+        <h2>02</h2>
+        <h3>How your rates are determined??</h3>
+    </label>
+    <div class="content">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum ex ducimus libero quia sunt impedit, sed vitae. Odio totam saepe eum laboriosam magnam consectetur minima dolorum accusamus. Excepturi, nam at.</p>
+    </div>
+        
+    </div>
+    <div class="tab">
+        <input type="radio"  name="acc" id="acc3" >
+        <label for="acc3">
+        <h2>03</h2>
+        <h3>Compensation Prices if damages are  made to the  vehicle</h3>
+    </label>
+    <div class="content">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum ex ducimus libero quia sunt impedit, sed vitae. Odio totam saepe eum laboriosam magnam consectetur minima dolorum accusamus. Excepturi, nam at.</p>
+    </div>
+        
+    </div>
+    <div class="tab">
+        <input type="radio"  name="acc" id="acc4" >
+        <label for="acc4">
+        <h2>04</h2>
+        <h3>Forgotton Password or SignUp Details</h3>
+    </label>
+    <div class="content">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum ex ducimus libero quia sunt impedit, sed vitae. Odio totam saepe eum laboriosam magnam consectetur minima dolorum accusamus. Excepturi, nam at.</p>
+    </div>
+        
+    </div>
 </div>
 
-
 <!-- Faqs section -->
-
-<h1>Example</h1>
 
 <!-- Faqs section -->
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Contact</title>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
@@ -16,13 +16,15 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
+<div class="cs4">
 <header class="header">
 
     <section class="flex">
 
-        <a href="home.html" class="logo">Neom Drive</a>
+        <a href="home.html" class="logo"><img src="./image/NeomDrive.png" alt="" height="70px"></a>
 
         <nav class="nav-bar">
             <a href="index.html">Home</a>
@@ -31,9 +33,17 @@
             <a href="faqs.html">FAQs</a>
             <a href="contact.html">Contact</a>
         </nav>
-
+        <div class="input-group">
+            <div class="form-outline">
+              <input type="search" id="form1" class="form-control" />
+              <label class="form-label" for="form1">Search</label>
+            </div>
+            <button type="button" class="btn btn-primary">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
         <div class="icons">
-            <a href="search.html"><i class="fas fa-search"></i></a>
+          
             <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
             <div id="user-btn" class="fas fa-user"></div>
             <div id="menu-btn" class="fas fa-bars"></div>
@@ -61,7 +71,7 @@
 
 
 <div class="heading">
-    <h3>Contact Us</h3>
+    <h3 style="color: black; background-color:aliceblue;">Contact Us</h3>
 </div>
 
 
@@ -73,11 +83,11 @@
     <div class="row">
  
        <div class="image">
-          <img src="./image/home-img-1.jpg" alt="">
+          <img src="./image/NeomDrive.png" alt="">
        </div>
  
        <form action="" method="post">
-          <h3>tell us something!</h3>
+          <h3>Ask  Your Queries here!</h3>
           <input type="text" name="name" required placeholder="Enter your name" maxlength="50" class="box">
           <input type="number" name="number" required placeholder="Enter your number" max="9999999999" min="0" class="box" onkeypress="if(this.value.length == 10) return false;">
           <input type="email" name="email" required placeholder="Enter your email" maxlength="50" class="box">
@@ -288,6 +298,7 @@ var swiper = new Swiper(".reviews-slider", {
    -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</div>
 
 </body>
 
