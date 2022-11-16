@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>About</title>
+    <style>
+        
+    </style>
+    <link rel="stylesheet" href="styles.css">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
@@ -18,11 +22,12 @@
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
+<div class="cs1">
 <header class="header">
 
     <section class="flex">
 
-        <a href="#" class="logo">Neom Drive</a>
+       <a href="#" class="logo"><img src="./image/NeomDrive.png" alt="No image found" height="70px"  ></a>
 
         <nav class="nav-bar">
             <a href="index.html">Home</a>
@@ -31,9 +36,17 @@
             <a href="faqs.html">FAQs</a>
             <a href="contact.html">Contact</a>
         </nav>
-
+        <div class="input-group">
+            <div class="form-outline">
+              <input type="search" id="form1" class="form-control" />
+              <label class="form-label" for="form1">Search</label>
+            </div>
+            <button type="button" class="btn btn-primary">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
         <div class="icons">
-            <a href="search.html"><i class="fas fa-search"></i></a>
+            
             <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
             <div id="user-btn" class="fas fa-user"></div>
             <div id="menu-btn" class="fas fa-bars"></div>
@@ -69,12 +82,12 @@
     <div class="row">
 
         <div class="image">
-            <img src="./image/home-img-1.jpg" alt="">
+            <img src="./image/NeomDrive.png" alt="">
         </div>
 
         <div class="content">
-            <h3>why choose us?</h3>
-            <p>We offer a varied fleet of cars, ranging from the compact. All our vehicles have air conditioning, power
+            <h3 style="color: white;">why choose us?</h3>
+            <p style="color: white;">We offer a varied fleet of cars, ranging from the compact. All our vehicles have air conditioning, power
                 steering, electric windows. All our vehicles are bought and maintained at official dealerships only.
                 Automatic transmission cars are available in every booking class. As we are not affiliated with any
                 specific automaker, we are able to provide a variety of vehicle makes and models for customers to rent.
@@ -93,7 +106,7 @@
 <section class="section get-start">
     <div class="container">
 
-        <h2 class="h2 title section-title">Get started with 4 simple steps</h2>
+        <h2 style="color: aliceblue;"  class="h2 title section-title">Get started with 4 simple steps</h2>
 
         <ul class="get-start-list">
 
@@ -182,7 +195,7 @@
 
 <section class="reviews">
 
-    <h1 class="title">customer's reviews</h1>
+    <h1 style="color: aliceblue;" class="title">customer's reviews</h1>
 
     <div class="swiper reviews-slider">
 
@@ -475,6 +488,7 @@ var swiper = new Swiper(".reviews-slider", {
    -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</div>
 
 </body>
 
