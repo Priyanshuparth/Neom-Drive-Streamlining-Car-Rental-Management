@@ -605,6 +605,8 @@ ion-icon {
 .get-start-card .card-link:is(:hover, :focus)::before {
   width: 100%;
 }
+
+
 /* Featured car */
 
 .featured-car li {
