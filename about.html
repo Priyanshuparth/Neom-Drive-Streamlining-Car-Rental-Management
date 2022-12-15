@@ -10,59 +10,51 @@
         
     </style>
     <link rel="stylesheet" href="styles.css">
-
+    <!-- Bootstrap CSS and Javascript -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
-    <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
-    <!-- font awesome cdn link  -->
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
-<div class="cs1">
+<body>
+    
+
 <header class="header">
 
+
     <section class="flex">
-
-       <a href="#" class="logo"><img src="./image/NeomDrive.png" alt="No image found" height="70px"  ></a>
-
-        <nav class="nav-bar">
-            <a href="index.html">Home</a>
+        <a href="about.html" class="logo"><img src="./image/NeomDrive.png" class="img-circle" alt="No image found" height="70px"  ></a>
+        <div class="page-header">
+          <nav class="nav-bar">
+            <a href="index.php">Home</a>
+            <a href="">    </a>
             <a href="about.html">About</a>
-            <a href="carlisting.html">Car Listing</a>
+            <a href="">    </a>
+            <a href="carlisting.php">Car Listing</a>
+            <a href="">    </a>
             <a href="faqs.html">FAQs</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <div class="input-group">
-            <div class="form-outline">
-              <input type="search" id="form1" class="form-control" />
-              <label class="form-label" for="form1">Search</label>
-            </div>
-            <button type="button" class="btn btn-primary">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        <div class="icons">
-            
-            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-            <div id="user-btn" class="fas fa-user"></div>
-            <div id="menu-btn" class="fas fa-bars"></div>
+          </nav>
         </div>
-
-        <div class="profile">
-            <p class="name">Priyanshu Parth</p>
-            <div class="flex">
-                <a href="profile.html" class="btn">profile</a>
-                <a href="#" class="delete-btn">logout</a>
+        <form class="navbar-form navbar-right">
+         
             </div>
-            <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="register1.php"><span class="glyphicon glyphicon-user"></span> User SignUp</a></li>
+              <li><a href="adminlogin.php"><span class="glyphicon glyphicon-log-in"></span> Vendor Login</a></li>
+            </ul>
+          
+        </form>
+        
+        
+          </section>
 
-
-        </div>
-    </section>
+    
 
 </header>
 
@@ -72,6 +64,7 @@
 
 <!-- About section starts -->
 
+<div class="cs1">
 
 <div class="heading">
     <h3>About us</h3>
@@ -94,7 +87,7 @@
                 Our mission is to be recognised as the global leader in Car Rental for companies and the public and
                 private sector by partnering with our clients to provide the best and most efficient Cab Rental
                 solutions and to achieve service excellence.</p>
-            <a href="menu.html" class="btn">our menu</a>
+            <a href="carlisting.php" class="btn">our menu</a>
         </div>
 
     </div>
@@ -106,7 +99,7 @@
 <section class="section get-start">
     <div class="container">
 
-        <h2 style="color: aliceblue;"  class="h2 title section-title">Get started with 4 simple steps</h2>
+        <h2 style="color: rgb(0, 0, 0);"  class="h2 title section-title">Get started with 4 simple steps</h2>
 
         <ul class="get-start-list">
 
@@ -123,7 +116,7 @@
                         If you are going to use a passage of Lorem Ipsum, you need to be sure.
                     </p>
 
-                    <a href="#" class="card-link">Get started</a>
+                    <a href="register1.php" class="card-link">Get started</a>
 
                 </div>
             </li>
@@ -208,8 +201,8 @@
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <!-- <i class="fas fa-star"></i> -->
+                    <!-- <i class="fas fa-star"></i> -->
                     <i class="fas fa-star-half-alt"></i>
                 </div>
                 <h3>Priyanshu Parth</h3>
@@ -222,11 +215,39 @@
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <!-- <i class="fas fa-star"></i> -->
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <h3>Priyanshu Parth</h3>
+                <h3>Sahil Phal</h3>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="./image/home-img-1.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo exercitationem ullam esse quia iusto
+                    in.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <!-- <i class="fas fa-star"></i> -->
+                    <!-- <i class="fas fa-star-half-alt"></i> -->
+                </div>
+                <h3>Satwik Prabhu</h3>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="./image/home-img-1.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo exercitationem ullam esse quia iusto
+                    in.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <!-- <i class="fas fa-star"></i> -->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Rakshitha S H</h3>
             </div>
 
             <div class="swiper-slide slide">
@@ -238,9 +259,10 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                    <i class="fas fa-star"></i>
+                    <!-- <i class="fas fa-star-half-alt"></i> -->
                 </div>
-                <h3>Priyanshu Parth</h3>
+                <h3>Nischita Shetty</h3>
             </div>
 
             <div class="swiper-slide slide">
@@ -249,40 +271,12 @@
                     in.</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Priyanshu Parth</h3>
-            </div>
-
-            <div class="swiper-slide slide">
-                <img src="./image/home-img-1.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo exercitationem ullam esse quia iusto
-                    in.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <!-- <i class="fas fa-star"></i> -->
+                    <!-- <i class="fas fa-star"></i> -->
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <h3>Priyanshu Parth</h3>
-            </div>
-
-            <div class="swiper-slide slide">
-                <img src="./image/home-img-1.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo exercitationem ullam esse quia iusto
-                    in.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Priyanshu Parth</h3>
+                <h3>Pallavi Nagraja</h3>
             </div>
 
         </div>
@@ -465,6 +459,10 @@ var swiper = new Swiper(".reviews-slider", {
    loop:true,
    grabCursor:true,
             spaceBetween: 20,
+    autoplay:{
+        delay:2500,
+        disableOnInteraction:false,
+    },
    pagination: {
       el: ".swiper-pagination",
    },

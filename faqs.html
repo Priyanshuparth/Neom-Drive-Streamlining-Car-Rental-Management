@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+   <script src="js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <title>Faqs</title>
     <style>
       
@@ -15,7 +18,7 @@
             height: 350px;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap:10px;
            
         }
         .container h1{
@@ -54,7 +57,7 @@
             transform: rotate(135deg);
             
         }
-        .container .tab label h2{
+        .container .tab label h4{
             width: 40px;
             height: 20px;
             background: #333;
@@ -67,19 +70,19 @@
             margin-right: 10px;
         }
        
-        .container .tab:nth-child(2) label h2{
+        .container .tab:nth-child(2) label h4{
             background: linear-gradient(132deg,rgb(247, 113, 11),rgb(243, 138, 58));
         }
-        .container .tab:nth-child(3) label h2{
+        .container .tab:nth-child(3) label h4{
             background: linear-gradient(132deg,rgb(243, 247, 1),rgb(238, 240, 86));
         }
-        .container .tab:nth-child(4) label h2{
+        .container .tab:nth-child(4) label h4{
             background: linear-gradient(132deg,#70f570,#49c628);
         }
-        .container .tab:nth-child(5) label h2{
+        .container .tab:nth-child(5) label h4{
             background: linear-gradient(132deg,#3c8ce7,#00eaff);
         }
-        .container .tab label  h3{
+        .container .tab label  h5{
             position: relative;
             font-weight: 500;
             color: #333;
@@ -126,45 +129,35 @@
 
 </head>
 <header class="header">
-
-    <section class="flex">
-
-        <a href="home.html" class="logo"><img src="./image/NeomDrive.png" alt="" height="70px"></a>
-
-        <nav class="nav-bar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="carlisting.html">Car Listing</a>
-            <a href="faqs.html">FAQs</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <div class="input-group">
-            <div class="form-outline">
-              <input type="search" id="form1" class="form-control" />
-              <label class="form-label" for="form1">Search</label>
-            </div>
-            <button type="button" class="btn btn-primary">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        <div class="icons">
-           
-            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-            <div id="user-btn" class="fas fa-user"></div>
-            <div id="menu-btn" class="fas fa-bars"></div>
-        </div>
-
-        <div class="profile">
-            <p class="name">Priyanshu Parth</p>
-            <div class="flex">
-                <a href="profile.html" class="btn">profile</a>
-                <a href="#" class="delete-btn">logout</a>
-            </div>
-            <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+  <section class="flex">
+<a href="about.html" class="logo"><img src="./image/NeomDrive.png" class="img-circle" alt="No image found" height="70px"  ></a>
+<div class="page-header">
+  <nav class="nav-bar">
+    <a href="index.php">Home</a>
+    <a href="">    </a>
+    <a href="about.html">About</a>
+    <a href="">    </a>
+    <a href="carlisting.php">Car Listing</a>
+    <a href="">    </a>
+    <a href="faqs.html">FAQs</a>
+  </nav>
+</div>
+<form class="navbar-form navbar-right">
+    <!-- <input type="text" class="input-md form-control" placeholder="Search">
+    <div class="input-group">
+      <button class="btn btn-default btn-xs " type="submit">
+        <i class="glyphicon glyphicon-search " ></i>
+      </button> -->
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="register1.php"><span class="glyphicon glyphicon-user"></span> User SignUp</a></li>
+      <li><a href="adminlogin.php"><span class="glyphicon glyphicon-log-in"></span> Vendor Login</a></li>
+    </ul>
+  
+</form>
 
 
-        </div>
-    </section>
+  </section>
 
 </header>
 
@@ -177,14 +170,14 @@
 
 <div class="container">
 
-    <h1>Frequently Asked Questions?</h1>
+    <h3 style="color:#333">Frequently Asked Questions?</h3>
     <div class="tab">
         <input type="radio"  name="acc" id="acc1" >
         <label for="acc1">
-        <h2>01</h2>
-        <h3>What is your refund policy??</h3>
+        <h4>01</h4>
+        <h5>What is your refund policy??</h5>
     </label>
-    <div class="content">
+    <div class="content" style="font-size: 15px;">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum ex ducimus libero quia sunt impedit, sed vitae. Odio totam saepe eum laboriosam magnam consectetur minima dolorum accusamus. Excepturi, nam at.</p>
     </div>
         
@@ -192,10 +185,10 @@
     <div class="tab">
         <input type="radio"  name="acc" id="acc2" >
         <label for="acc2">
-        <h2>02</h2>
-        <h3>How your rates are determined??</h3>
+        <h4>02</h4>
+        <h5>How your rates are determined??</h5>
     </label>
-    <div class="content">
+    <div class="content" style="font-size: 15px;">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum ex ducimus libero quia sunt impedit, sed vitae. Odio totam saepe eum laboriosam magnam consectetur minima dolorum accusamus. Excepturi, nam at.</p>
     </div>
         
@@ -203,10 +196,10 @@
     <div class="tab">
         <input type="radio"  name="acc" id="acc3" >
         <label for="acc3">
-        <h2>03</h2>
-        <h3>Compensation Prices if damages are  made to the  vehicle</h3>
+        <h4>03</h4>
+        <h5>Compensation Prices if damages are  made to the  vehicle</h5>
     </label>
-    <div class="content">
+    <div class="content" style="font-size: 15px;">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum ex ducimus libero quia sunt impedit, sed vitae. Odio totam saepe eum laboriosam magnam consectetur minima dolorum accusamus. Excepturi, nam at.</p>
     </div>
         
@@ -214,10 +207,10 @@
     <div class="tab">
         <input type="radio"  name="acc" id="acc4" >
         <label for="acc4">
-        <h2>04</h2>
-        <h3>Forgotton Password or SignUp Details</h3>
+        <h4>04</h4>
+        <h5>Forgotton Password or SignUp Details</h5>
     </label>
-    <div class="content">
+    <div class="content" style="font-size: 15px;">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum ex ducimus libero quia sunt impedit, sed vitae. Odio totam saepe eum laboriosam magnam consectetur minima dolorum accusamus. Excepturi, nam at.</p>
     </div>
         
